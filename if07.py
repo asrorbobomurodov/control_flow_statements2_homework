@@ -13,4 +13,19 @@ def main(temp):
     Returns:
         str: return answer.
     """
-    return
+    if temp<0:
+        return "Freezing"
+    elif 0<temp<11:
+        return "Very Cold"
+    elif 10<temp<21:
+        return "Cold"
+    elif 20<temp<31:
+        return "Normal"
+    elif 30<temp<41:
+        return "Hot"
+    elif temp>40:
+        return "Very hot"
+    
+print(main(5))
+print(main(-8))
+print(main(41))
